@@ -36,4 +36,6 @@
  **/
 @property (nonatomic , copy) void (^TapActionBlock)(NSInteger pageIndex);
 
+@property (nonatomic , copy) void (^scrollActionBlock)(NSInteger pageIndex);
+
 @end

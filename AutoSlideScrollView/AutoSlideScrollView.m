@@ -244,6 +244,11 @@
         //        NSLog(@"previous，当前页:%d",self.currentPageIndex);
         [self configContentViews];
     }
+    
+    if (self.scrollActionBlock) {
+        self.scrollActionBlock(self.currentPageIndex);
+    }
+
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
